@@ -1,21 +1,20 @@
 import { Link, Route, Router, Switch, useLocation } from "wouter";
-import { TestimonialCard } from "@/testimonial-card/testimonial-card.tsx";
-import { usePathname } from "wouter/use-browser-location";
+
+import { TestimonialCardDemo } from "@/testimonial-card/testimonial-card-demo";
 
 function App() {
-  const [path] = usePathname();
   const [location] = useLocation();
-  console.log(path);
-  console.log(location);
 
   return (
     <Router base="/portfolio">
       <main className="m-10">
-        {location === "/portfolio/" && (
-          <Link href="/testimonial-card">Testimonial Card</Link>
-        )}
+        <nav>
+          {location === "/portfolio/" && (
+            <Link href="/testimonial-card">Testimonial Card</Link>
+          )}
+        </nav>
         <Switch>
-          <Route path="/testimonial-card" component={TestimonialCard} />
+          <Route path="/testimonial-card" component={TestimonialCardDemo} />
         </Switch>
       </main>
     </Router>

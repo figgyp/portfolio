@@ -1,8 +1,22 @@
-function TestimonialCard() {
+import type { Testimonial } from "@/testimonial-card/testimonial";
+
+type Props = {
+  testimonial: Testimonial;
+};
+
+function TestimonialCard({ testimonial }: Props) {
+  const imageUrl = new URL(testimonial.avatarUrl, import.meta.url).href;
   return (
-    <h1 className="text-3xl text-green-500 font-bold underline">
-      Hello, world!
-    </h1>
+    <section className="rounded-lg">
+      <header>
+        <img src={imageUrl} alt="User avatar" />
+        <div>
+          <h2>{testimonial.name}</h2>
+          <h4>{testimonial.login}</h4>
+        </div>
+      </header>
+      <p>{testimonial.copy}</p>
+    </section>
   );
 }
 
