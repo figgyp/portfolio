@@ -7,15 +7,17 @@ type Props = {
 function TestimonialCard({ testimonial }: Props) {
   const imageUrl = new URL(testimonial.avatarUrl, import.meta.url).href;
   return (
-    <section className="rounded-lg">
-      <header>
-        <img src={imageUrl} alt="User avatar" />
+    <section className="bg-white shadow-md rounded-lg w-[340px] p-6">
+      <header className="flex gap-4">
+        <img src={imageUrl} alt="User avatar" height={48} width={48} />
         <div>
-          <h2>{testimonial.name}</h2>
-          <h4>{testimonial.login}</h4>
+          <h2 className="text-lg text-neutral-900">{testimonial.name}</h2>
+          <h4 className="font-noto text-sm text-neutral-600">
+            {testimonial.login}
+          </h4>
         </div>
       </header>
-      <p>{testimonial.copy}</p>
+      <p className="text-base text-neutral-600 mt-4">{testimonial.copy}</p>
     </section>
   );
 }
