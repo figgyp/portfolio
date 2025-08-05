@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 import pkg from './package.json';
 
 export default defineConfig({
+  base: '/portfolio/', // required for GH Pages
   envDir: "./config",
   define: {
     'import.meta.env.VITE_APP_TITLE': pkg.name ?? "react starter kit",
