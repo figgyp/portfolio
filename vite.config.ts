@@ -11,6 +11,15 @@ export default defineConfig({
   define: {
     'import.meta.env.VITE_APP_TITLE': pkg.name ?? "react starter kit",
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+        // Kludge to get GH Pages to not render 404 on browser refresh for SPA route
+        notFound: path.resolve(__dirname, 'index.html'),
+      },
+    },
+  },
   plugins: [
     react(),
     tailwindcss(),
