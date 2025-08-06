@@ -7,7 +7,7 @@ function App() {
 
   return (
     <Router base="/portfolio">
-      <main className="h-screen w-screen bg-gray-200">
+      <main className="h-screen w-screen bg-gradient-to-r from-[rgb(249,250,251)] to-[rgb(210,214,219)]">
         {location === "/portfolio/" && (
           <nav className="py-10 px-16">
             <Link
