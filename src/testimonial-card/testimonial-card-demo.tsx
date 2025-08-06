@@ -10,7 +10,7 @@ const testimonial = {
 
 function TestimonialCardDemo() {
   return (
-    <div className="font-noto pt-[200px] max-w-md mx-auto">
+    <div className="font-noto pt-[200px] max-w-md mx-auto flex justify-center">
       <TestimonialCard testimonial={testimonial} />
     </div>
   );
