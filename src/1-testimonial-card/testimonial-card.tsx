@@ -1,4 +1,4 @@
-import type { Testimonial } from "@/testimonial-card/testimonial";
+import type { Testimonial } from "@/1-testimonial-card/testimonial";
 
 type Props = {
   testimonial: Testimonial;

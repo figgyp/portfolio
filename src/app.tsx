@@ -1,7 +1,7 @@
 import { Link, Route, Router, Switch, useLocation } from "wouter";
 
-import { TestimonialCardDemo } from "@/testimonial-card/testimonial-card-demo";
-import { BlogCardDemo } from "@/blog-card/blog-card-demo.tsx";
+import { TestimonialCardDemo } from "@/1-testimonial-card/testimonial-card-demo";
+import { BlogCardDemo } from "@/2-blog-card/blog-card-demo.tsx";
 
 function App() {
   const [location] = useLocation();
@@ -15,13 +15,13 @@ function App() {
               href="/testimonial-card"
               className="text-blue-400 hover:text-blue-600 hover:underline"
             >
-              Testimonial Card
+              1 -  Testimonial Card
             </Link>
             <Link
               href="/blog-card"
               className="text-blue-400 hover:text-blue-600 hover:underline"
             >
-              Blog Card
+              2 - Blog Card
             </Link>
           </nav>
         )}

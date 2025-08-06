@@ -1,4 +1,4 @@
-import { TestimonialCard } from "@/testimonial-card/testimonial-card";
+import { TestimonialCard } from "@/1-testimonial-card/testimonial-card";
 import profileThumbnail from "./assets/profile-thumbnail.png";
 
 const testimonial = {

@@ -1,4 +1,4 @@
-import type { Category } from "@/blog-card/category.ts";
+import type { Category } from "@/2-blog-card/category.ts";
 
 export type Article = {
   tag: Category;
