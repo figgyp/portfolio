@@ -6,6 +6,6 @@ export type Article = {
   desc: string;
   ctaText: string;
   ctaUrl: string;
-  img: any;
+  img: string;
   imgAlt?: string;
 };
