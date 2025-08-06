@@ -11,7 +11,7 @@ function TestimonialCard({ testimonial }: Props) {
       <header className="flex gap-4">
         <img src={imageUrl} alt="User avatar" height={48} width={48} />
         <div>
-          <h2 className="text-lg text-neutral-900">{testimonial.name}</h2>
+          <h2 className="text-lg font-semibold text-neutral-900">{testimonial.name}</h2>
           <h4 className="font-noto text-sm text-neutral-600">
             {testimonial.login}
           </h4>
