@@ -1,5 +1,5 @@
-import { BlogCard } from "@/blog-card/blog-card.tsx";
-import blogCardImg from "@/blog-card/assets/spacejoy-YqFz7UMm8qE-unsplash.jpg";
+import blogCardImg from "./assets/spacejoy-YqFz7UMm8qE-unsplash.jpg";
+import { BlogCard } from "./blog-card.tsx";
 
 const article = {
   tag: {
