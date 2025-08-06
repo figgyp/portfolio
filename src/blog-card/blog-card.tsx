@@ -1,6 +1,6 @@
 import { RiArrowRightLine } from "@remixicon/react";
-import { Badge } from "@/components/badge.tsx";
-import { Link } from "@/components/link.tsx";
+import { Badge } from "@ui/badge.tsx";
+import { Link } from "@ui/link.tsx";
 import type { Article } from "./article.ts";
 
 type Props = {

@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { MouseEventHandler, ReactNode } from "react";
 import { clsx } from "clsx";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
   href?: string;
   target?: string;
   rel?: string;
-  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
 };
 
 function Link({

@@ -1,5 +1,5 @@
 # Ignore everything initially
 /**
 
-# Except the 'src' directory (and its contents)
 !/src/
+!/packages/
