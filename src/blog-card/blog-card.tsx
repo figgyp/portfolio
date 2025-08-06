@@ -1,4 +1,5 @@
 import type { Article } from "@/blog-card/article.ts";
+import { RiArrowRightLine } from "@remixicon/react";
 
 type Props = {
   article: Article;
@@ -18,9 +19,9 @@ function BlogCard({ article }: Props) {
           {article.title}
         </p>
         <p className="mb-6 text-base text-neutral-600">{article.desc}</p>
-        <a className="text-base text-indigo-700 flex gap-[6px]">
+        <a className="text-base text-indigo-700 flex gap-[6px] items-center">
           <span>{article.ctaText}</span>
-          <span>→{/* TODO remix icons */}</span>
+          <span><RiArrowRightLine size={20} /></span>
         </a>
       </div>
     </section>
