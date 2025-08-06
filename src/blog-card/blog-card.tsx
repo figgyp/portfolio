@@ -1,6 +1,7 @@
 import { RiArrowRightLine } from "@remixicon/react";
 import type { Article } from "./article.ts";
 import { Badge } from "@/components/badge.tsx";
+import { Link } from "@/components/link.tsx";
 
 type Props = {
   article: Article;
@@ -15,17 +16,19 @@ function BlogCard({ article }: Props) {
         alt={article.imgAlt ?? article.desc}
       />
       <div className="px-4 py-6">
-        <Badge variant="green">Interior</Badge>
+        <Badge className="mb-2" variant="green">
+          Interior
+        </Badge>
         <p className="mb-3 text-lg font-semibold text-neutral-900">
           {article.title}
         </p>
         <p className="mb-6 text-base text-neutral-600">{article.desc}</p>
-        <a className="text-base text-indigo-700 flex gap-[6px] items-center">
-          <span>{article.ctaText}</span>
-          <span>
-            <RiArrowRightLine size={20} />
-          </span>
-        </a>
+        <Link
+          className="text-indigo-700"
+          iconRight={<RiArrowRightLine size={20} />}
+        >
+          {article.ctaText}
+        </Link>
       </div>
     </section>
   );
