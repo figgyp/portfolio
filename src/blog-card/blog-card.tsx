@@ -11,7 +11,7 @@ function BlogCard({ article }: Props) {
   return (
     <section className="w-[340px] shadow-md rounded-lg bg-white">
       <img
-        className="object-cover w-full rounded-t-lg"
+        className="w-full h-[288px] object-cover rounded-t-lg"
         src={article.img}
         alt={article.imgAlt ?? article.desc}
       />
