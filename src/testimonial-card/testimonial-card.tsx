@@ -7,7 +7,7 @@ type Props = {
 function TestimonialCard({ testimonial }: Props) {
   const imageUrl = new URL(testimonial.avatarUrl, import.meta.url).href;
   return (
-    <section className="bg-white shadow-md rounded-lg w-[340px] p-6">
+    <section className="bg-white shadow-lg rounded-lg w-[340px] p-6">
       <header className="flex gap-4">
         <img src={imageUrl} alt="User avatar" height={48} width={48} />
         <div>
