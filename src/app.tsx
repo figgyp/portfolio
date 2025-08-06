@@ -23,6 +23,12 @@ function App() {
             >
               Blog Card
             </Link>
+            <Link
+              href="/blog-card"
+              className="text-blue-400 hover:text-blue-600 hover:underline"
+            >
+              Test
+            </Link>
           </nav>
         )}
         <Switch>
