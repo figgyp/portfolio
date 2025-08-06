@@ -22,7 +22,9 @@ function BlogCard({ article }: Props) {
         <p className="mb-3 text-lg font-semibold text-neutral-900">
           {article.title}
         </p>
-        <p className="mb-6 text-base text-neutral-600">{article.desc}</p>
+        <p className="mb-6 text-base text-neutral-600 line-clamp-2">
+          {article.desc}
+        </p>
         <Link iconRight={<RiArrowRightLine size={20} />}>
           {article.ctaText}
         </Link>
