@@ -7,17 +7,17 @@ function App() {
 
   return (
     <Router base="/portfolio">
-      <nav>
+      <main className="h-screen w-screen bg-gray-200">
         {location === "/portfolio/" && (
-          <Link
-            href="/testimonial-card"
-            className="text-blue-400 hover:text-blue-600 hover:underline"
-          >
-            Testimonial Card
-          </Link>
+          <nav className="py-10 px-16">
+            <Link
+              href="/testimonial-card"
+              className="text-blue-400 hover:text-blue-600 hover:underline"
+            >
+              Testimonial Card
+            </Link>
+          </nav>
         )}
-      </nav>
-      <main className="h-screen w-screen bg-gray-200 py-10 px-16">
         <Switch>
           <Route path="/testimonial-card" component={TestimonialCardDemo} />
         </Switch>
