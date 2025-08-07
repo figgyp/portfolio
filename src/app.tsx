@@ -28,7 +28,7 @@ function App() {
               href="/profile-card"
               className="text-blue-400 hover:text-blue-600 hover:underline"
             >
-              2 - Profile Card
+              3 - Profile Card
             </Link>
           </nav>
         )}

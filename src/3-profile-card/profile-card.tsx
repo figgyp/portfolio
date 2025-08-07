@@ -70,7 +70,7 @@ function ProfileCard({ userProfile }: Props) {
         </button>
         <div className="flex gap-4 justify-center">
           {Object.entries(userProfile.socialHandles)
-            .filter(([_, login]) => Boolean(login))
+            .filter((entry) => Boolean(entry[1]))
             .map(([type, login]) => (
               <a
                 key={type}
