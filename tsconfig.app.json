@@ -29,5 +29,5 @@
       "@ui/*": ["./packages/ui/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "packages"]
 }
