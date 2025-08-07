@@ -1,5 +1,6 @@
 import { RiArrowRightLine } from "@remixicon/react";
 import { Badge } from "@ui/badge.tsx";
+import { Card } from "@ui/card.tsx";
 import { Link } from "@ui/link.tsx";
 import type { Article } from "./article.ts";
 
@@ -9,7 +10,7 @@ type Props = {
 
 function BlogCard({ article }: Props) {
   return (
-    <section className="w-[340px] shadow-md rounded-lg bg-white">
+    <Card className="w-[340px]">
       <img
         className="w-full h-[288px] object-cover rounded-t-lg"
         src={article.img}
@@ -29,7 +30,7 @@ function BlogCard({ article }: Props) {
           {article.ctaText}
         </Link>
       </div>
-    </section>
+    </Card>
   );
 }
 

@@ -1,4 +1,5 @@
-import type { Testimonial } from "@/1-testimonial-card/testimonial";
+import { Card } from "@ui/card.tsx";
+import type { Testimonial } from "./testimonial";
 
 type Props = {
   testimonial: Testimonial;
@@ -7,7 +8,7 @@ type Props = {
 function TestimonialCard({ testimonial }: Props) {
   const imageUrl = new URL(testimonial.avatarUrl, import.meta.url).href;
   return (
-    <section className="bg-white shadow-md rounded-lg w-[340px] p-6">
+    <Card className="w-[340px] p-6">
       <header className="flex gap-4">
         <img src={imageUrl} alt="User avatar" height={48} width={48} />
         <div>
@@ -20,7 +21,7 @@ function TestimonialCard({ testimonial }: Props) {
         </div>
       </header>
       <p className="text-base text-neutral-600 mt-4">{testimonial.copy}</p>
-    </section>
+    </Card>
   );
 }
 

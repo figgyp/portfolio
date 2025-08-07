@@ -15,7 +15,7 @@ function App() {
               href="/testimonial-card"
               className="text-blue-400 hover:text-blue-600 hover:underline"
             >
-              1 -  Testimonial Card
+              1 - Testimonial Card
             </Link>
             <Link
               href="/blog-card"
