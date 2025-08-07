@@ -45,9 +45,9 @@ function Link({
   if (disabled) {
     return (
       <span
+        className={clsx(baseStyles, disabledStyles)}
         aria-disabled="true"
         tabIndex={-1}
-        className={clsx(baseStyles, disabledStyles)}
       >
         {renderContent()}
       </span>
